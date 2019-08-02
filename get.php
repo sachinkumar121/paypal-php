@@ -1,4 +1,7 @@
 <?php
+require_once('dbConfig.php');
+
+// echo date_default_timezone_get();die;
 $curl = curl_init();
  
 curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);

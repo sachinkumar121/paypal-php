@@ -88,11 +88,11 @@ curl_setopt($curl, CURLOPT_POSTFIELDS, http_build_query(array(
     'TOKEN' => $row['token'],
     'PayerID' => $payer,
  
-    'PROFILESTARTDATE' => '2016-11-21T16:00:00Z',
+    'PROFILESTARTDATE' => date("Y-m-d\TH:i:s\Z"),
     'DESC' => 'Agree for 1 month',
     'BILLINGPERIOD' => 'Month',
     'BILLINGFREQUENCY' => '1',
-    'AMT' => 100,
+    'AMT' => 110,
     'CURRENCYCODE' => 'USD',
     'COUNTRYCODE' => 'US',
     'MAXFAILEDPAYMENTS' => 3
